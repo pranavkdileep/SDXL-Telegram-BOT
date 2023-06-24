@@ -1,9 +1,10 @@
 from truecallerpy import search_phonenumber
 
 def get_truecaller_info(phone_number):
-    api_key = "a1i0u--gFEQ8K-D-vzYJeE8wvTQhcKEFbXpERdfDZChE1Y4mcY1LvG7hK6r9V8HV"
+    api_key = "a1i0---gGEsoyFXVtvPSl1wXmXJRmAK-7M_tabPFswhJLFZz9vxkGHkzS6rDX-05"
     country_code = "IN"
     data = search_phonenumber(phone_number, country_code, api_key)
+    print(data)
     
 
     # Extracting and returning the desired information
