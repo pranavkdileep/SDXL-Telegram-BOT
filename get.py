@@ -18,4 +18,3 @@ def get_truecaller_info(phone_number):
     else:
         return None
 
-# Example usage
