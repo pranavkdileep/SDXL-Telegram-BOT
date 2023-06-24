@@ -1,7 +1,7 @@
 from truecallerpy import search_phonenumber
 
 def get_truecaller_info(phone_number):
-    api_key = "a1i0---gGEsoyFXVtvPSl1wXmXJRmAK-7M_tabPFswhJLFZz9vxkGHkzS6rDX-05"
+    api_key = "a1i0v--gGYtPu-hVIu09Kf1xr1w8zKP51SbuabstmmWAqYf4yvpCntqhc6rEm1Np"
     country_code = "IN"
     data = search_phonenumber(phone_number, country_code, api_key)
     print(data)
