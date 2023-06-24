@@ -1,3 +1,4 @@
 truecallerpy
 pyTelegramBotAPI
 flask
+gunicorn
