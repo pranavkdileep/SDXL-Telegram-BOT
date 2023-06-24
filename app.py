@@ -1,6 +1,7 @@
 import telebot
 import os
 from get import get_truecaller_info
+from check import is_user_in_channel
 
 bottoken = os.environ['bottoken']
 
@@ -15,6 +16,12 @@ def send_wlcomemesssage(message):
 def echo_all(message):
     # i need to remove spacese from message and convert it to string
     phone_numbert = message.text.replace(" ", "")
+    # get sender id
+    sender_id = message.chat.id
+    # check if the user is in the channel
+    if not is_user_in_channel(sender_id):
+        bot.reply_to(message, "Please join the channel to use this bot @pkdart")
+        return
     # check if the message is a number with + sign
     if phone_numbert.startswith("+") and phone_numbert[1:].isdigit():
         dtails = get_truecaller_info(phone_numbert)
